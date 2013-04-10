@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+Калькулятор
+</title>
+<script language="JavaScript">
+
+function RadioColor(i)
+{
+if (i==0) document.bgColor="Red";
+if (i==1) document.bgColor="Green";
+if (i==2) document.bgColor="Pink";
+if (i==3) document.bgColor="Blue";
+if (i==4) document.bgColor="Yellow";
+
+}
+function calc()
+{
+
+var a=parseFloat(document.myform.a.value);
+var b=parseFloat(document.myform.b.value);
+var c=parseFloat(document.myform.c.value);
+
+document.myform.result.value=document.myform.result.value+"\n"+"Итого:"+(a*b*c*41/100);
+
+if (document.myform.check1.checked)
+alert("Самовывоз");
+else
+alert("Доставка на дом");
+}
+
+</script>
+</head>
+<body>
+<form name=myform>
+<P ALIGN="CENTER">
+<INPUT TYPE="RADIO" ONCLICK="RadioColor(0);" NAME="RBut"><FONT SIZE="4">Красные</FONT><br>
+<INPUT TYPE="RADIO" ONCLICK="RadioColor(1);" NAME="RBut"><FONT SIZE="4">Зеленые</FONT><br>
+<INPUT TYPE="RADIO" ONCLICK="RadioColor(2);" NAME="RBut"><FONT SIZE="4">Розовые</FONT><br>
+<INPUT TYPE="RADIO" ONCLICK="RadioColor(3);" NAME="RBut"><FONT SIZE="4">Бирюзовые</FONT><br>
+<INPUT TYPE="RADIO" ONCLICK="RadioColor(4);" NAME="RBut"><FONT SIZE="4">Желтые</FONT><br>
+<br>
+Самовывоз?
+<input type="checkbox" name="check1"> <br><br>
+Введите высоту: <br><input type=text name=b><br>
+
+Введите ширину: <br><input type=text name=a><br>
+
+Выберите количество (от 1 до 7): <br><input type=text name=c><br>
+
+<input type=button value="Стоимость" onClick="calc();"><br>
+<textarea name="result">
+</textarea></P>
+</form>
+</body> 
+</html>
