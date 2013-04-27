@@ -6,5 +6,4 @@ echo "Vid=$Vid <br>";
 $kilkist=$_REQUEST['kilkist'];
 echo "kilkist=$kilkist <br>";
 
-
 ?>
