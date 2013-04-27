@@ -1,8 +1,8 @@
 <?php
-$mebly=$_REQUEST['mebly'];
-echo "mebly=$mebly <br>";
-$tzvet=$_REQUEST['tzvet'];
-echo "tzvet=$tzvet <br>";
+$cvet=$_REQUEST['cvet'];
+echo "cvet=$cvet <br>";
+$Vid=$_REQUEST['Vid'];
+echo "Vid=$Vid <br>";
 $kilkist=$_REQUEST['kilkist'];
 echo "kilkist=$kilkist <br>";
 
