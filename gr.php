@@ -1,14 +1,21 @@
+<html>
+<head>
+</head>
+<body>
 <?php
 $cvet=$_REQUEST['cvet'];
-echo "cvet=$cvet <br>";
+echo "Цвет =$cvet <br>";
 $Vid=$_REQUEST['Vid'];
-echo "Vid=$Vid <br>";
+echo "Вид =$Vid <br>";
 $kilkist=$_REQUEST['kilkist'];
-echo "kilkist=$kilkist <br>";
+echo "Количество =$kilkist <br>";
 $result=$_REQUEST['result'];
-echo "result=$result <br>";
+echo "$result <br>";
 $fp=fopen("res.txt","a");
 fputs($fp,"$cvet\t$Vid\$kilkist\t$result\t");
 fclose($fp);
 
 ?>
+</body>
+</html>
+
