@@ -12,7 +12,7 @@ if ($fp)
    while(!feof($fp))
    {
     $stroka=fscanf($fp,"%s\t %s\t %d\t %d\n");
-       list($cvet,$Vid,$kilkist,$result)=$stroka;
+    list($cvet,$Vid,$kilkist,$result)=$stroka;
 echo "<TR><td>$cvet</td> <td>$Vid</td> <td>$kilkist</td> <td>$result</td> </TR>";
 }
 fclose($fp);
