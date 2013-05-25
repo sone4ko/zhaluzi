@@ -8,9 +8,8 @@ echo "Количество =$kilkist <br>";
 $result=$_REQUEST['result'];
 echo "$result <br>";
 $fp=fopen("res.txt","a");
-fputs($fp,"$cvet\t$Vid\$kilkist\t$result\t");
+fputs($fp,"$cvet\t$Vid\t$kilkist\t$result\n");
 fclose($fp);
 ?>
 <br><a href="11.php"> Перегляд замовлення</a>
-
 
