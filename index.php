@@ -8,6 +8,6 @@ header('Content-type: text/html; charset=utf-8');
 </head>
 <body>
 <a href="g.php"> Калькулятор розрахунку вартості жалюзі</a><br>
-<a href="11.php"> Перегляд замовлення</a>
+Для перегляду замовлень пройдіть по <a href="11.php"> даному посиланню</a>
 </body>
 </html>
