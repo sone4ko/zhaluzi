@@ -1,7 +1,3 @@
-<html>
-<head>
-</head>
-<body>
 <?php
 $cvet=$_REQUEST['cvet'];
 echo "Цвет =$cvet <br>";
@@ -14,8 +10,5 @@ echo "$result <br>";
 $fp=fopen("res.txt","a");
 fputs($fp,"$cvet\t$Vid\$kilkist\t$result\t");
 fclose($fp);
-
 ?>
-</body>
-</html>
 
