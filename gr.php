@@ -11,4 +11,6 @@ $fp=fopen("res.txt","a");
 fputs($fp,"$cvet\t$Vid\$kilkist\t$result\t");
 fclose($fp);
 ?>
+<br><a href="11.php"> Перегляд замовлення</a>
+
 
