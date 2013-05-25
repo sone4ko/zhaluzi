@@ -25,7 +25,7 @@ var a=parseFloat(document.myform.a.value);
 var b=parseFloat(document.myform.b.value);
 var kilkist=parseFloat(document.myform.kilkist.value);
 
-document.myform.result.value=document.myform.result.value+"\n"+"Итого:"+(a*b*kilkist*41/100);
+document.myform.result.value=document.myform.result.value+(a*b*kilkist*41/100);
 
 if (document.myform.check1.checked)
 alert("Самовывоз");
